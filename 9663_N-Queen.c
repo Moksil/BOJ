@@ -34,3 +34,5 @@ int main(void)
 	printf("%d", tracking(lst, N, 0));
 	return (0);
 }
+
+// result : OK
