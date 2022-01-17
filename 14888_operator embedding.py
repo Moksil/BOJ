@@ -8,24 +8,19 @@ def check(p_list, oper_list):
 			return False
 	return True
 	
-
 def dfs(oper_lst, promising, blank, N, depth):
 	if depth == N - 1:
-		promise_lst = []
+		copy_list = []
 		for cpy in blank:
-			promise_lst.append(cpy)
-		promising.append(promise_lst)
-		return True
-	ret = False
-	for i in range(4):
-		blank.append(i)
+			copy_list.append(cpy)
+		promising.append(copy_list)
+		return
+	for idx in range(4):
+		blank.append(idx)
 		if check(blank, oper_lst):
-			if dfs(oper_lst, promising, blank, N, depth + 1):
-				ret = True 
-			else:
-				ret = False
+			dfs(oper_lst, promising, blank, N, depth + 1)
 		blank.pop(-1)
-	return ret
+
 
 def calc_equation(input_list, promising_set):
 	result = input_list[0]
@@ -63,3 +58,6 @@ for promising_set in promising[1: ]:
 
 print(max)
 print(min)
+
+
+# result : OK
