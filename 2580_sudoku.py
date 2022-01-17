@@ -29,14 +29,14 @@ def get_unsorved_cord(board):
 				lst.append([row, col])
 	return lst
 
-def solve_sudoku(board, unsorved_lst, N):
-	if N == len(unsorved_lst):
+def sudoku_dfs(board, unsorved_lst, depth):
+	if depth == len(unsorved_lst):
 		return True
-	cord = unsorved_lst[N]
+	cord = unsorved_lst[depth]
 	ret = False
 	for i in range(1, 10):
 		if check(board, cord[0], cord[1], i):
-			if solve_sudoku(board, unsorved_lst, N + 1):
+			if sudoku_dfs(board, unsorved_lst, depth + 1):
 				ret = True
 			else:
 				board[cord[0]][cord[1]] = 0
@@ -48,7 +48,7 @@ for _ in range(9):
 	board.append(list(map(int, input().split())))
 
 unsorved = get_unsorved_cord(board)
-solve_sudoku(board, unsorved, 0)
+sudoku_dfs(board, unsorved, 0)
 print_map(board)
 
 # result : OK

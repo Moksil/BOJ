@@ -18,3 +18,5 @@ N = int(input())
 lst = [0] * N
 
 print(tracking(lst, N, 0))
+
+# result : KO - timeover
