@@ -47,8 +47,8 @@ board = []
 for _ in range(9):
 	board.append(list(map(int, input().split())))
 
-unsorved_lst = get_unsorved_cord(board)
-solve_sudoku(board, unsorved_lst, 0)
+unsorved = get_unsorved_cord(board)
+solve_sudoku(board, unsorved, 0)
 print_map(board)
 
 # result : OK
