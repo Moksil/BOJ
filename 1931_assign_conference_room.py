@@ -19,7 +19,8 @@ for i in range(len(time_table)):
 
 print(sol)
 
-# 220204 정렬은 생각지도 못했던 문제를 해결해줄 수 있다. 
+# [실버2] 1931 - 회의실 배정
+# 220204_#1 정렬은 생각지도 못했던 문제를 해결해줄 수 있다. 
 """
 [실버2]
 문제풀이에 시간 굉장히 오래 걸림.
@@ -47,4 +48,8 @@ lambda 사용 법 : 이름 없는 함수를 생성. [lambda 매개변수 : retur
 cf. 리스트 요소 삭제방법  del & remove()
 	del : 내장 함수. del lst[idx]와 같이 사용. 인덱스를 통해 요소 삭제하고 싶은 경우 사용.
 	.remove() : list 제공 함수. lst.remove(val) 값을 통해 요소 삭제하고 싶은 경우 사용.
+
+
+<review> : maybe 3 or more
+
 """

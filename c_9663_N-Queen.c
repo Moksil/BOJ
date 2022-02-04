@@ -37,3 +37,8 @@ int main(void)
 
 
 // result : OK
+/*
+
+<review> : maybe 4 or more
+
+*/

@@ -21,3 +21,9 @@ for idx in range(len(t_list) // 2):
 		min = val
 
 print(min)
+
+
+"""
+
+<review> : maybe 3 or more
+"""

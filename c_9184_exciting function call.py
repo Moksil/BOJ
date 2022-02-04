@@ -28,6 +28,12 @@ for input_set in input_list:
 	print("w({}, {}, {}) = {}".format(input_set[0], input_set[1], input_set[2], w(input_set[0], input_set[1], input_set[2])))
 
 
+"""
+
+<review> : maybe 2 or more
+"""
+
+
 # Better Answer
 """
 import sys

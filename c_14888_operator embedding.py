@@ -59,5 +59,8 @@ for promising_set in promising[1: ]:
 print(max)
 print(min)
 
-
 # result : OK
+"""
+
+<review> : maybe 4 or more
+"""

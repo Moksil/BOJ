@@ -51,5 +51,9 @@ unsorved = get_unsorved_cord(board)
 sudoku_dfs(board, unsorved, 0)
 print_map(board)
 
+"""
+
+<review> : maybe 4 or more
+"""
 
 # result : OK

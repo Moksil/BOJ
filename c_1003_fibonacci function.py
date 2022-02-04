@@ -12,3 +12,8 @@ for i in range(2, max_val):
 for val in input_list:
 	zero_call, one_call = ans_list[val][0], ans_list[val][1]
 	print(zero_call, one_call)
+
+"""
+
+<review> : maybe 2 or more
+"""
