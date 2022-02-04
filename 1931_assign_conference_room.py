@@ -6,7 +6,7 @@ for _ in range(N):
 	time_set = list(map(int, input().split()))
 	time_table.append(time_set)
 
-time_table.sort(key = lambda x : (x[1], x[0]))
+time_table.sort(key = lambda x : (x[1]))
 
 sol = 0
 for i in range(len(time_table)):
@@ -23,6 +23,8 @@ print(sol)
 """
 문제풀이에 시간 굉장히 오래 걸림.
 입력 검증 함수를 통해 입력을 줄이는 방법으로 풀었다가 시간초과.
+시작하는 시간보다 끝나는 시간이 주요했음. 하지만 시작시간 고려 없이 풀면 오답.
+
 cf. 정렬방법 sorted & .sort() 
 	- sorted() : 내장 함수. 인자로 전달된 리스트 유지하고 정렬된 리스트 return.
 	- .sort() : list 제공 함수. return 값 반환 없이 내부 정렬 실행.
