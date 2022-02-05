@@ -1,9 +1,10 @@
 # [OON] 00000 - problem title
 # YYMMDD_#N subtitle
+# better Solution
 """
 comment
 
-<review> : except code, only comment
+<review> : except problem, only comment
 <review> : maybe N or more
 
 """

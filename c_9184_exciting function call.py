@@ -28,13 +28,9 @@ for input_set in input_list:
 	print("w({}, {}, {}) = {}".format(input_set[0], input_set[1], input_set[2], w(input_set[0], input_set[1], input_set[2])))
 
 
-"""
-
-<review> : maybe 2 or more
-"""
 
 
-# Better Answer
+# Better Solution
 """
 import sys
 input = sys.stdin.readline
@@ -55,4 +51,8 @@ while True:
 	a, b, c = map(int, input().split())
 	if a == b == c == -1: break
 	print(f'w({a}, {b}, {c}) = {w(a, b, c)}')
+"""
+"""
+
+<review> : maybe 2 or more
 """
