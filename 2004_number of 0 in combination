@@ -1,0 +1,34 @@
+def count_2_factor(num):
+	factor_2 = 0
+	p = 1
+	while 2 ** p <= num:
+		factor_2 += (num // (2 ** p))
+		p += 1
+	return factor_2
+
+def count_5_factor(num):
+	factor_5 = 0
+	p = 1
+	while 5 ** p <= num:
+		factor_5 += (num // (5 ** p))
+		p += 1
+	return factor_5
+
+n, m = map(int, input().split())
+sol = min((count_5_factor(n) - count_5_factor(n - m) - count_5_factor(m)), (count_2_factor(n) - count_2_factor(n - m) - count_2_factor(m)))
+print(sol)
+
+# [실버2] 2004 - 조합 0의 개수
+# https://www.acmicpc.net/problem/00000
+# 220213_#1 조합론 문제는 수학문제로써 완벽히 해결해야 구현이 쉬워진다.
+
+"""
+1676번 factorial에서 0을 세는 문제에서는 5의 factor만 구해서 정답을 구할 수 있었다.
+항상 5의 factor가 2의 factor보다 적었기 때문에 가능했다.
+하지만 조합의 경우, 5C1 처럼 5 factor보다 2 factor가 적은 경우가 존재 하기 때문에
+5 factor와 2 factor를 둘 다 count하여 더 작은 값을 찾아야했다.
+
+어렵지 않은 문제인데 경우의 수 문제로써 컴팩트한 풀이를 생각하기 전에 구현을 하다보니 쉬운 반례들이 생각나지 않아 오래걸렸다.
+
+<review> : maybe 3 or more
+"""
